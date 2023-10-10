@@ -78,9 +78,7 @@ Hecho esto, imprime los números primos entre 1 y 100.
 
 
 def is_prime():
-
     for number in range(1, 101):
-
         if number >= 2:
 
             is_divisible = False
@@ -92,7 +90,6 @@ def is_prime():
 
             if not is_divisible:
                 print(number)
-
 
 is_prime()
 
@@ -113,3 +110,11 @@ def reverse(text):
 
 
 print(reverse("Hola mundo"))
+
+
+def reverse(text):
+    reversed_text = text[::-1]
+    return reversed_text
+
+
+print(reverse("Paco"))
