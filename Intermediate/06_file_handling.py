@@ -13,7 +13,7 @@ import os
 txt_file = open("Intermediate/my_file.txt", "w+")
 
 txt_file.write(
-    "Mi nombre es Brais\nMi apellido es Moure\n35 años\nY mi lenguaje preferido es Python")
+    "1. Mi nombre es Brais\nMi apellido es Moure\n35 años\nY mi lenguaje preferido es Python")
 
 # print(txt_file.read())
 print(txt_file.read(10))
@@ -22,7 +22,7 @@ print(txt_file.readline())
 for line in txt_file.readlines():
     print(line)
 
-txt_file.write("\nAunque también me gusta Kotlin")
+txt_file.write("\n2. Aunque también me gusta Kotlin")
 print(txt_file.readline())
 
 txt_file.close()
@@ -75,9 +75,4 @@ with open("Intermediate/my_file.csv") as my_other_file:
     for line in my_other_file.readlines():
         print(line)
 
-# .xlsx file
-# import xlrd # Debe instalarse el módulo
 
-# .xml file
-
-# ¿Te atreves a practicar cómo trabajar con este tipo de ficheros?
